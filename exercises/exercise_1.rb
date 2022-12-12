@@ -3,7 +3,6 @@ require_relative '../setup'
 puts "Exercise 1"
 puts "----------"
 
-# Your code goes below here ...
 Store.create do |x|
   x.name = "Burnaby"
   x.annual_revenue = 300000

@@ -7,7 +7,6 @@ require 'pp'
 puts "Exercise 4"
 puts "----------"
 
-# Your code goes here ...
 Store.create do |x|
   x.name = "Surrey"
   x.annual_revenue = 224000
