@@ -11,4 +11,10 @@ class Store < ActiveRecord::Base
     end
   end
 
+  def destroy
+    if employees.count == 0
+      return true
+    end
+  end
+
 end

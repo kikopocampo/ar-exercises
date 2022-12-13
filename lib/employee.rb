@@ -5,4 +5,10 @@ class Employee < ActiveRecord::Base
                                           greater_than: 39,
                                           less_than: 200}
   validates_associated :store
+
+  before_create do
+    pw_length = 8
+    self.password = rand(36**pw_length).to_s(36)
+  end
+
 end
